@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>📚 BookVerse</h1>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Perfil do Leitor</h2>
+
+            <div class="icone">👤</div>
+
+            <p><strong>Nome:</strong> <span id="nome"></span></p>
+
+            <p><strong>Nickname:</strong> <span id="nickname"></span></p>
+
+            <label>Frase favorita</label>
+
+            <input type="text" id="frase" placeholder="Digite sua frase favorita">
+
+            <label>Livro do momento</label>
+
+            <input type="text" id="livro" placeholder="Nome do livro">
+
+            <button onclick="salvarPerfil()">
+                Salvar Perfil
+            </button>
+
+            <hr>
+
+            <h3>Seu Perfil</h3>
+
+            <p><strong>Frase:</strong></p>
+
+            <p id="fraseSalva" class="caixa"></p>
+
+            <p><strong>Lendo atualmente:</strong></p>
+
+            <p id="livroSalvo" class="caixa"></p>
+
+        </div>
+
+        <!-- Estante -->
+        <div class="card-estante">
+
+            <h2>📚 Minha Estante</h2>
+
+            <div class="formulario">
+
+                <input type="text" id="nomeLivro" placeholder="Nome do livro">
+
+                <input type="text" id="autor" placeholder="Autor">
+
+                <select id="formato">
+
+                    <option value="">Formato</option>
+
+                    <option>Físico</option>
+
+                    <option>E-book</option>
+
+                    <option>PDF</option>
+
+                    <option>Audiobook</option>
+
+                </select>
+
+                <input type="number" id="paginas" placeholder="Quantidade de páginas">
+
+                <input type="number" id="avaliacao" placeholder="Avaliação (1 a 5)" min="1" max="5">
+
+                <button onclick="cadastrarLivro()">
+                    Cadastrar Livro
+                </button>
+
+            </div>
+
+            <hr>
+
+            <input type="text" id="pesquisa" placeholder="🔎 Pesquisar livro..." onkeyup="mostrarLivros()">
+
+            <div id="listaLivros"></div>
+
+        </div>
+
+    </div>
+
+    <script src="inicio.js"></script>
+
+</body>
+
+</html>

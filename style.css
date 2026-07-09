@@ -1,0 +1,185 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4efe6;
+
+}
+
+h1 {
+
+    text-align: center;
+
+    color: #6f472d;
+
+    margin: 30px;
+
+}
+
+.container {
+
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+.card,
+.card-estante {
+
+    width: 420px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+
+}
+
+h2 {
+
+    text-align: center;
+
+    color: #6f472d;
+
+}
+
+.icone {
+
+    font-size: 70px;
+
+    text-align: center;
+
+    margin: 15px;
+
+}
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 8px;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+
+}
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #6f472d;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+button:hover {
+
+    background: #5a3924;
+
+}
+
+.caixa {
+
+    background: #f7f7f7;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    min-height: 22px;
+
+    word-break: break-word;
+
+}
+
+#listaLivros {
+
+    margin-top: 20px;
+
+    max-height: 320px;
+
+    overflow-y: auto;
+
+    padding-right: 8px;
+
+}
+
+#listaLivros::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+#listaLivros::-webkit-scrollbar-thumb {
+
+    background: #8b5e3c;
+
+    border-radius: 10px;
+
+}
+
+.livro {
+
+    background: #f7f7f7;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    border-left: 5px solid #6f472d;
+
+}
+
+.livro h3 {
+
+    margin-top: 0;
+
+}
